@@ -6,12 +6,13 @@ ARG USER=vscode
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends --no-install-suggests \
-        gnupg-agent \
-        pass \
-        python3-pip \
-        software-properties-common \
-        tmux \
-        tzdata \
+    apache2-utils \
+    gnupg-agent \
+    pass \
+    python3-pip \
+    software-properties-common \
+    tmux \
+    tzdata \
     && apt-get -y --purge autoremove
 
 WORKDIR /tmp
