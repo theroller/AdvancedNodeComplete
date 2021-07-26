@@ -10,5 +10,8 @@
     ],
     "eslint.workingDirectories": [
         "./main"
-    ]
+    ],
+    "[javascript]": {
+        "editor.tabSize": 2
+    }
 }
